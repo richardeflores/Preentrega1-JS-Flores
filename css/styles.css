@@ -1,0 +1,182 @@
+/*Reset CSS*/
+
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color:#1B1B1B;
+}
+
+header {
+    background-color: white;
+    padding-bottom: 40px;
+    padding-right: 160px;
+    padding-left: 160px;
+}
+.logoRF{
+    width: 81px;
+    display: inline-block;
+    padding-top: 40px;
+    float: left;
+}
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    padding-top: 70px;
+    padding-left: 400px;
+    float: right;
+}
+
+li {
+    padding-right: 35px;
+    padding-left: 35px;
+    font-weight: bold;
+}
+
+section.description {
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-top: 60px;
+    height: 350px;
+}
+
+.profilepic {
+    float:left;
+    border-radius: 8px;
+    width: 27%;
+}
+.data-content{
+    float: right;
+    width: 70%;
+}
+
+/*Cambio en textos*/
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase ;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+h3 {
+    font-size: 28px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+.contact-btn {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1A8DC6;
+    color: white;
+    font-weight: bold;
+}
+
+/*Sección de Stacks*/
+.stack {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.stack-card {
+    display: inline-block;
+    background-color: rgb(255,255,255, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    margin:20px;
+    width: 20%;
+    box-shadow: 2px 2px 10px 2px rgba(255,255,255,0.7);
+}
+
+/*Separador*/
+.separador {
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-top: 60px;
+    height: 60px;
+}
+
+.title-separador{
+    float:left;
+}
+.separador .contact-btn{
+    float:right;
+}
+
+/*Projects*/
+.projects {
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-top: 60px;
+    height: 500px;
+}
+
+.project1 {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    background-color: rgb(255,255,255, 0.3);
+    box-shadow: 2px 2px 10px 2px rgba(255,255,255,0.7);
+}
+
+.project2 {
+    float: right;
+    width: 40%;
+    padding: 15px;
+    background-color: rgb(255,255,255, 0.3);
+    box-shadow: 2px 2px 10px 2px rgba(255,255,255,0.7);
+}
+
+img.project-img {
+    width: 100%;
+    height: auto;
+}
+
+/*footer*/
+footer {
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-top: 60px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+footer .contact-btn {
+    margin-top: 30px;
+
+}
+
+
+footer p {
+    text-align: center;
+}
+footer img {
+    padding-left: 10px;
+    padding-right: 10px;
+}

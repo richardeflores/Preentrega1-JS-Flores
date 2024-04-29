@@ -3,40 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Richard Flores Portfolio</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Logo" srcset="">
         <nav>
+            <img src="assets/Logo RF.svg" alt="Logo" srcset="" class="logoRF">
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Blog</li>
-                <li>Contact</li>        
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>        
             </ul>
         </nav>
     </header>
     <section class="description">
         <div>
-            <img src="" alt="foto">
+            <img src="https://media.licdn.com/dms/image/C4D03AQEGlMldT1Hjfg/profile-displayphoto-shrink_200_200/0/1607981683516?e=2147483647&v=beta&t=WPOIUrkXkCifokvG0KBvnr9TNzTwczoXrdAKvR3eQt4" alt="foto" class="profilepic">
         </div>
         <div>
-            <h1>HI THERE, I'M RICHARD!</h1>
-            <p>I'm a Full-Stack Programmer who loves crafting seamless user experiencesand building rock-solid systems.</p>
-            <img src="" alt="icon"> <p>Santiago, Chile</p>
-            <button class="contact-btn">Contact me</button>
+            <div class="data-content">
+                <h1 class="hello">HI THERE, I'M RICHARD!</h1>
+                <br>
+                <p class="hello">I'm a Full-Stack Programmer who loves crafting seamless user experiences and building rock-solid systems.</p>
+                <br>
+                <p><img src="assets/locationIcon.png" alt="icon" width="18px"> Santiago, Chile</p>
+                <br>
+                <a href="contact.html"><button class="contact-btn">Contact me</button></a>
+            </div>
         </div>
     </section>
     <section class="stack">
-        <h2>Tech Stack</h2>
-        <div class="stack-card"></div>
-        <div class="stack-card"></div>
-        <div class="stack-card"></div>
+        <h1>Tech Stack</h1>
+        <div>
+            <div class="stack-card"><h2><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="icon figma" width="30px"> Figma</h2><p>Colaborative Design</p></div>
+            <div class="stack-card"><h2><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/html-512.png" alt="HTML5" width="30px"> HTML 5</h2><p>Markup Language</p></div>
+            <div class="stack-card"><h2><img src="https://static-00.iconduck.com/assets.00/file-type-css-icon-1806x2048-r5fwjl3p.png" alt="CSS3" width="30px"> CSS 3</h2><p>Style sheet</p></div>
+        </div>
     </section>
-    <section class="separador"></section>
-    <section class="'projects"></section>
-    <section class="blog"></section>
-    <footer></footer>
+    <section class="separador">
+        <h2 class="title-separador">PROJECTS</h2>
+        <a href="projects.html"><button class="contact-btn">See more</button></a>
+    </section>
+    <section class="projects">
+        <div class="project1">
+            <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="Imagen del proyecto" class="project-img">
+            <h2>Web Design</h2>
+            <p>"Como diseñador web, creo experiencias
+                digitales impactantes y funcionales, fusionando
+                diseño creativo y desarrollo técnico para crear
+                sitios web memorables y efectivos."</p>
+        </div>
+        <div class="project2">
+            <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="Imagen del Proyecto" class="project-img">
+            <h2>Web Design</h2>
+            <p>"Como diseñador web, creo experiencias
+                digitales impactantes y funcionales, fusionando
+                diseño creativo y desarrollo técnico para crear
+                sitios web memorables y efectivos."</p>
+        </div>
+    </section>
+    <section class="separador">
+        <h2 class="title-separador">Blog</h2>
+        <a href="blog.html"><button class="contact-btn">See more</button></a>
+    </section>
+    <footer>
+        <h1>have a Project idea?</h1>
+        <br>
+        <br>
+        <p>
+            <a href="contact.html"><button class="contact-btn">Contact me</button></a>
+            <br><br><br>
+            <a href="https://www.instagram.com/lcdorichardflores/"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="instagram" width="30px"></a>
+            <a href="mailto:richard@rfloresdev.com"><img src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Mail-512.png" alt="mail" width="30px"></a>
+            <a href="https://github.com/richardeflores"><img src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-circle-512.png" alt="github" width="30px"></a>
+            <a href="https://www.linkedin.com/in/lcdorichardflores/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" width="30px" alt="linkedin"></a>
+        </p>
+    </footer>
 </body>
 </html>
