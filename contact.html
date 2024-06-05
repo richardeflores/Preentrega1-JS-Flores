@@ -19,18 +19,38 @@
         </nav>
     </header>
     <section class="contact-form">
-        <div>
-            <img src="https://media.licdn.com/dms/image/C4D03AQEGlMldT1Hjfg/profile-displayphoto-shrink_200_200/0/1607981683516?e=2147483647&v=beta&t=WPOIUrkXkCifokvG0KBvnr9TNzTwczoXrdAKvR3eQt4" alt="foto" class="profilepic">
-        </div>
-        <div>
-            <div class="data-content">
-                <h1 class="hello">HI THERE, I'M RICHARD!</h1>
-                <br>
-                <p class="hello">I'm a Full-Stack Programmer who loves crafting seamless user experiences and building rock-solid systems.</p>
-                <br>
-                <p><img src="assets/locationIcon.png" alt="icon" width="18px"> Santiago, Chile</p>
-                <br>
-                <a href="contact.html"><button class="contact-btn">Contact me</button></a>
+        <div class="form-data">
+            <h1 class="hello">if you have an idea i’m here to help</h1>
+            <div class="img-form"><img src="https://img.freepik.com/free-vector/man-working-using-laptop-flat-design_1308-102458.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1712016000&semt=ais" alt="foto" class="contactpic"></div>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="correo">Email:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Phone:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <label for="compania">Company's name:</label>
+                        <input type="text" id="compania" name="compania">
+                    </div>
+                    <div>
+                        <label for="tipo_proyecto">Project type:</label>
+                        <select id="tipo_proyecto" name="tipo_proyecto">
+                            <option value="personal">Personal</option>
+                            <option value="empresa">Empresa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="descripcion">Describe your idea:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="contact-btn">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

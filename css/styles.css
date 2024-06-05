@@ -212,3 +212,84 @@ section.projects h1 {
 }
 
 /*Contact page*/
+
+
+.contact-form {
+    padding-top:100px;
+    padding-right: 160px;
+    padding-left: 160px;
+    height: 500px;
+}
+
+label {
+    color:white;
+}
+
+h1.hello {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.ul-form {
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.img-form {
+    float: left;
+    width: 45%;
+}
+
+.form-container {
+    float: right;
+    width: 55%;
+}
+
+label{
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 124px;
+    margin-right: 19px;
+}
+
+.contactpic {
+    width: 380px;
+    float: left;
+    border-radius: 8px;
+}
+
+select#tipo_proyecto {
+    margin-bottom: 20px;
+}
+
+textarea#descripcion {
+    margin-bottom: 20px;
+}
+
+
+/*Blog post*/
+.blog-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-post {
+    float: left;
+    width:45%;
+    height: 400px;;
+}
+
+.info-post {
+    float: right;
+    width:45%;
+    height: 400px;;
+}
+.info-post h2 {
+    text-align: center;
+}
+.info-post p {
+    text-align: justify;
+}
