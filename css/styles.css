@@ -66,6 +66,7 @@ p.hello {
 .separador {
   padding: 60px;
   background-color: rgba(0, 157, 221, 0.5);
+  margin-bottom: 60px;
 }
 
 .stack-card {
@@ -98,11 +99,10 @@ section h2 {
   padding: 60px;
   background-color: rgba(0, 157, 221, 0.5);
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: auto;
-  align-items: flex-end;
-  padding: 30px 30px 60px 30px;
+  align-items: center;
+  align-content: stretch;
+  flex-direction: column;
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -106,6 +106,7 @@ main {
   .separador
   {
     @include separador();
+    margin-bottom: $dist-vertical
   }
   .stack-card {
     @include caja_stack();
@@ -131,10 +132,9 @@ section h2 {
 .separador-2 {
     @include separador();
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: auto;
-    align-items: flex-end;
-    padding: 30px 30px 60px 30px;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: column;
+    margin-top: $dist-vertical;
 }
 
