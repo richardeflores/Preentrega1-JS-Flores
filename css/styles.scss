@@ -31,8 +31,11 @@ $dist-vertical:60px;
         border-radius: 10px;
         background-color: $color-ppal4;
         color: $color-contraste;
-        font-weight: bold;
+        font-weight: 600;
         cursor: pointer;
+        text-transform: uppercase;
+        width: 250px;
+        margin-top: $dist-vertical/2;
 }
 
 @mixin separador {
@@ -120,3 +123,18 @@ section h2 {
 .stack-card p {
     color: $color-contraste;
 }
+.tarjetas {
+    margin: 30px;
+}
+
+//Proyectos
+.separador-2 {
+    @include separador();
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+    align-items: flex-end;
+    padding: 30px 30px 60px 30px;
+}
+
