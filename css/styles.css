@@ -6,4 +6,26 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+nav {
+  font-weight: 600;
+}
+
+main {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.data-content {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.profilepic {
+  border-radius: 50%;
+}
+
+.hello {
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */

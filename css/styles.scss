@@ -9,10 +9,14 @@ $color-ppal3: #386dbd;
 $color-ppal4:#009ddd;
 $color-ppal5: #05d3f8;
 $color-bg:#333333;
+$color-contraste:#fff;
 $fuente-t1:48px;
 $fuente-t2:36px;
 $fuente-t3:28px;
 $fuente-texto:20px;
+$screen-width:1440px;
+$dist-horizontal:180px;
+$dist-vertical:60px;
 
 //Menu
 body {
@@ -21,3 +25,25 @@ body {
     background-color: $color-bg;
     font-family: "Montserrat", sans-serif;
 }
+
+nav {
+    font-weight: 600;
+}
+  
+main {
+      text-align: center;
+      margin-top: $dist-vertical;
+  }
+
+  .data-content {
+    color: $color-contraste;
+    margin-top: $dist-vertical/2;
+  }
+
+  .profilepic {
+    border-radius: 50%;
+  }
+
+  .hello {
+    margin-top: $dist-vertical/2;
+  }
