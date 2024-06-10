@@ -1,0 +1,23 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+//Variables 
+$color-ppal1: #0f4571;
+$color-ppal2: #3a3132;
+$color-ppal3: #386dbd;
+$color-ppal4:#009ddd;
+$color-ppal5: #05d3f8;
+$color-bg:#333333;
+$fuente-t1:48px;
+$fuente-t2:36px;
+$fuente-t3:28px;
+$fuente-texto:20px;
+
+//Menu
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-bg;
+    font-family: "Montserrat", sans-serif;
+}
