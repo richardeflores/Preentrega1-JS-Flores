@@ -6,8 +6,8 @@
 $color-ppal1: #0f4571;
 $color-ppal2: #3a3132;
 $color-ppal3: #386dbd;
-$color-ppal4:#009ddd;
-$color-ppal5: #05d3f8;
+$color-ppal4:rgb(0, 157, 221);
+$color-ppal5: rgb(5, 211, 248);
 $color-bg:#333333;
 $color-contraste:#fff;
 $fuente-t1:48px;
@@ -26,6 +26,21 @@ $dist-vertical:60px;
     box-shadow: 2px 2px 10px 2px rgba(255,255,255,0.7);
 }
 
+@mixin botones {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $color-ppal4;
+        color: $color-contraste;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+@mixin separador {
+    padding: 60px;
+    background-color: rgba(0,157,221,0.5) 
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -35,6 +50,15 @@ body {
 
 p {
     font-size: $fuente-texto;
+}
+
+h2 {
+    font-size: $fuente-t2;
+    color: $color-contraste;
+}
+h3 {
+    font-size: $fuente-t3;
+    font-weight: 700;
 }
 
 //Menu
@@ -59,6 +83,7 @@ main {
 
   .profilepic {
     border-radius: 50%;
+    border:solid 4px $color-ppal4;
   }
 
   .hello {
@@ -69,12 +94,29 @@ main {
     font-size: $fuente-texto;
 }
 
+//Boton
+.contact-btn {
+    @include botones();
+}
+
   //Seccion Stack
+  .separador
+  {
+    @include separador();
+  }
   .stack-card {
     @include caja_stack();
   }
-  .stack-card h2 {
+  .stack-card h3 {
     color: $color-ppal4;
     font-weight: 700;
     font-size: $fuente-t2;
   }
+
+section h2 {
+    text-align: center;
+}
+
+.stack-card p {
+    color: $color-contraste;
+}
