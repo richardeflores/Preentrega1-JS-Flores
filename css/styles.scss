@@ -159,7 +159,7 @@ img.project-img {
 
 footer {
   text-align: center;
-  padding-top: $dist-vertical;
+  margin-top: $dist-vertical;
   display: flex;
   flex-direction: column;
 }
@@ -169,8 +169,38 @@ footer {
   padding-bottom: $dist-vertical;
 }
 
-//Pagina proyectos
+//CSS paginas gral
 
 main.pages{
   margin:0;
 }
+
+//Blog
+
+.post1 {
+  padding:15px;
+  margin: $dist-vertical calc($dist-horizontal/4);
+  background-color: rgb(255,255,255, 0.3);
+  box-shadow: 2px 2px 10px 2px rgba(255,255,255,0.7);
+}
+
+.blog-img{
+  height: 200px;
+  width: 100%;
+}
+
+.blog-title {
+  text-align: center;
+  padding-top: 20px;
+  color:$color-contraste;
+}
+
+.post1 h2{
+  margin-top: 25px;
+}
+
+.post1 a{
+  text-decoration: none;
+  color: $color-contraste;
+}
+
