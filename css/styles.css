@@ -121,4 +121,15 @@ img.project-img {
   padding-top: 30px;
 }
 
+footer {
+  text-align: center;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */
