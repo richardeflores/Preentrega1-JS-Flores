@@ -34,42 +34,45 @@
         </div>
     </nav>
     </header>
+    <main class="pages">
+      <div class="separador">
+        <h2 class="title-separador">Contact Us</h2>
+      </div>
+    </main>
     <section class="contact-form">
+      <h3 class="hello">If you have an idea i’m here to help</h3>
         <div class="form-data">
-            <h1 class="hello">if you have an idea i’m here to help</h1>
             <div class="img-form"><img src="https://img.freepik.com/free-vector/man-working-using-laptop-flat-design_1308-102458.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1712016000&semt=ais" alt="foto" class="contactpic"></div>
-            <div class="form-container">
-                <form action="#" method="POST">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="correo">Email:</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div>
-                        <label for="telefono">Phone:</label>
-                        <input type="tel" id="telefono" name="telefono" required>
-                        <label for="compania">Company's name:</label>
-                        <input type="text" id="compania" name="compania">
-                    </div>
-                    <div>
-                        <label for="tipo_proyecto">Project type:</label>
-                        <select id="tipo_proyecto" name="tipo_proyecto">
-                            <option value="personal">Personal</option>
-                            <option value="empresa">Empresa</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="descripcion">Describe your idea:</label><br>
-                        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="contact-btn">Send</button>
-                    </div>
-                </form>
+            <div class="container">
+              <form>
+                <ul class="flex-outer">
+                  <li>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name here">
+                  </li>
+                  <li>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name here">
+                  </li>
+                  <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email here">
+                  </li>
+                  <li>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone here">
+                  </li>
+                  <li>
+                    <label for="message">Message</label>
+                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                  </li>
+                    <button class="contact-btn contacto" type="submit">Send</button>
+                  </ul>
+              </form>
             </div>
         </div>
     </section>
+    <hr>
     <footer>
       <h2>Have a Project idea?</h2>
           <a href="contact.html"><button class="contact-btn">Contact me</button></a>

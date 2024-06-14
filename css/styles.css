@@ -190,4 +190,79 @@ hr {
   color: #fff;
 }
 
+.contact-form {
+  margin: 60px 45px;
+}
+
+img.contactpic {
+  max-width: 100%;
+  border-radius: 5px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+h3.hello {
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+label {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 60px;
+  max-width: 300px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 80px;
+  width: 100%;
+}
+
+textarea#message {
+  flex: 1 0 150px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
