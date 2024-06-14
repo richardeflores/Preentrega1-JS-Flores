@@ -204,3 +204,29 @@ main.pages{
   color: $color-contraste;
 }
 
+//Post
+
+.blog-section {
+  padding:15px;
+  margin: $dist-vertical calc($dist-horizontal/4);
+}
+
+.blog-img{
+  margin-bottom: $dist-vertical;
+  height: 200px;
+  width: 100%;
+}
+
+.info-post h2 {
+ text-align: center;
+ margin-bottom: $dist-vertical;
+}
+
+.info-post p, .info-post h3, .info-post h4{
+  text-align: justify;
+  color: $color-contraste;
+}
+
+hr {
+  color: $color-contraste;
+}
