@@ -204,6 +204,11 @@ main.pages{
   color: $color-contraste;
 }
 
+.blog-img{
+  height: 200px;
+  width: 100%;
+}
+
 //Post
 
 .blog-section {
@@ -211,10 +216,10 @@ main.pages{
   margin: $dist-vertical calc($dist-horizontal/4);
 }
 
-.blog-img{
-  margin-bottom: $dist-vertical;
+.post-img{
   height: 200px;
   width: 100%;
+  margin-bottom: $dist-vertical;
 }
 
 .info-post h2 {
