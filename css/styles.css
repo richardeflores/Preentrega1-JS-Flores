@@ -314,6 +314,9 @@ textarea#message {
   .blog-img {
     height: 350px;
   }
+  .img-form {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
