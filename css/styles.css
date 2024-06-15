@@ -299,13 +299,20 @@ textarea#message {
   }
   .projects-container {
     display: flex;
+    margin: 0;
     justify-content: space-between;
     padding: 60px 20px;
   }
   .project {
-    margin: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
+  }
+  .separador {
+    width: 100%;
+  }
+  .blog-img {
+    height: 350px;
   }
 }
 

@@ -342,15 +342,23 @@ textarea#message {
 
   .projects-container {
     display: flex;
+    margin: 0;
     justify-content: space-between;
     padding: $dist-vertical calc($dist-horizontal/9);
   }
   .project {
-  margin: 10px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   }
+  .separador{
+    width: 100%;
+  }
 
+  //Pagina blog
+  .blog-img {
+    height: 350px;
+  }
 }
 
 
