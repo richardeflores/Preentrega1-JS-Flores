@@ -204,6 +204,11 @@ hr {
   margin: 60px 45px;
 }
 
+.form-data {
+  display: flex;
+  flex-direction: column;
+}
+
 img.contactpic {
   max-width: 100%;
   border-radius: 5px;
@@ -267,7 +272,7 @@ label {
 .flex-outer > li > label + *,
 .flex-inner {
   flex: 1 0 80px;
-  width: 100%;
+  width: 90%;
 }
 
 textarea#message {
@@ -316,6 +321,59 @@ textarea#message {
   }
   .img-form {
     text-align: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1920px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-foto {
+    margin: 30px;
+  }
+  .tarjetas {
+    display: flex;
+    justify-content: center;
+  }
+  .stack-card {
+    width: 20%;
+  }
+  .separador-2 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .projects-container {
+    display: flex;
+    justify-content: center;
+  }
+  .project {
+    margin: 60px 30px;
+  }
+  main.pages {
+    display: block;
+  }
+  .form-data {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-outer li, .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    flex: 50%;
+  }
+  .flex-outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  li.msg {
+    flex: 100%;
   }
 }
 
