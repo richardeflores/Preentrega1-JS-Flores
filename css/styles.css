@@ -416,7 +416,7 @@ textarea#message {
   content: '';
   position: absolute;
   inset: -10px 140px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
+  background: linear-gradient(315deg, #00ccff, rgb(0, 157, 221));
   transition: 0.5s;
   animation: animate 4s linear infinite;
 }
@@ -438,7 +438,7 @@ textarea#message {
   content: '';
   position: absolute;
   inset: 6px;
-  background: #162052;
+  background: #333333;
   border-radius: 50%;
   z-index:1 ;
 }
