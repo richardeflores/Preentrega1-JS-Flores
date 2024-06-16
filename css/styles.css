@@ -62,6 +62,8 @@ p.hello {
   text-transform: uppercase;
   width: 250px;
   margin-top: 30px;
+  transform: scale(1.0);
+  transition: 1s;
 }
 
 .separador {
@@ -378,3 +380,19 @@ textarea#message {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/*Animaciones*/
+.contact-btn:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  background-color:rgba(0, 157, 221, 0.5);
+}
+
+.stack-card:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+}
+
+.post1:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
