@@ -5,7 +5,6 @@ function obtenerDatos() {
     const peso = parseFloat(prompt('Ingrese su peso (kg):'));
     const creatinina = parseFloat(prompt('Ingrese su creatinina sérica (mg/dL):'));
     const esNegro = prompt('¿Es usted de raza negra? (si/no):').toLowerCase();
-    //creación de un objeto de los valores ingresados
     return { sexo, edad, peso, creatinina, esNegro };
 }
 
@@ -33,6 +32,7 @@ function calcularDepuracionCreatininaPorSexo(sexo, edad, peso, creatinina, facto
 
 
 function calcularDepuracionCreatinina() {
+    //creación de un objeto de los valores ingresados
     const datos = obtenerDatos();
 
     // Verificar si los datos no son válidos
