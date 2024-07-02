@@ -6,6 +6,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: rgb(0, 157, 221);
+}
+
 p {
   font-size: 20px;
 }
@@ -465,4 +473,13 @@ pointer-events: none;
 
 .contenedor-interno:hover .contenedor-interno img{
   opacity:0;
+}
+
+.project {
+  opacity:1;
+  transition: 0.5s;
+}
+.project:hover {
+  opacity:0.7;
+  transition: 0.5s;
 }
