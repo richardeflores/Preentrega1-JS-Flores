@@ -1,3 +1,38 @@
+// Array de usuarios registrados
+let usuariosRegistrados = ['richard', 'profe', 'invitado'];
+// Array de historial de pacientes
+let historialPacientes = [
+    { nombre: 'Paciente1', edad: 45, sexo: 'hombre', peso: 70, creatinina: 1.1, esNegro: 'no' },
+    { nombre: 'Paciente2', edad: 30, sexo: 'mujer', peso: 60, creatinina: 0.9, esNegro: 'si' },
+    { nombre: 'Paciente3', edad: 55, sexo: 'hombre', peso: 80, creatinina: 1.2, esNegro: 'no' },
+];
+
+function login() {
+    // Solicitamos el nombre de usuario mediante un prompt
+    const username = prompt('Ingrese su usuario:').toLowerCase();
+    const usuarioValido = usuariosRegistrados.some(usuario => usuario === username);
+
+    if (usuarioValido) {
+        alert("Login exitoso!");
+        elegirAccion(); // Llamamos a la función para elegir la acción a realizar
+    } else {
+        alert("Nombre de usuario incorrecto.");
+        location.reload(); // Recargamos la página si el login falla
+    }
+}
+
+function elegirAccion() {
+    const accion = prompt('¿Qué desea hacer? (1: Calcular depuración de creatinina, 2: Revisar historial de pacientes)');
+    if (accion === '1') {
+        calcularDepuracionCreatinina();
+    } else if (accion === '2') {
+        revisarHistorial();
+    } else {
+        alert('Opción no válida. Inténtelo de nuevo.');
+        elegirAccion(); // Pedimos de nuevo la acción si la opción no es válida
+    }
+}
+
 // Obteniendo los datos mediante función
 function obtenerDatos() {
     const sexo = prompt('Ingrese su sexo (hombre/mujer):').toLowerCase();
@@ -10,7 +45,9 @@ function obtenerDatos() {
 
 // Validando los datos
 function sonDatosValidos({ sexo, edad, peso, creatinina, esNegro }) {
-    return (sexo === 'hombre' || sexo === 'mujer') && !isNaN(edad) && !isNaN(peso) && !isNaN(creatinina) && (esNegro === 'si' || esNegro === 'no');
+    return (sexo === 'hombre' || sexo === 'mujer') &&
+           !isNaN(edad) && !isNaN(peso) && !isNaN(creatinina) &&
+           (esNegro === 'si' || esNegro === 'no');
 }
 
 // Función para calcular la depuración de creatinina basada en el sexo
@@ -30,9 +67,8 @@ function calcularDepuracionCreatininaPorSexo(sexo, edad, peso, creatinina, facto
     return ((140 - edad) * peso * factorSexo) / (72 * creatinina) * factorRacial;
 }
 
-
 function calcularDepuracionCreatinina() {
-    //creación de un objeto de los valores ingresados
+    // Creación de un objeto con los valores ingresados
     const datos = obtenerDatos();
 
     // Verificar si los datos no son válidos
@@ -59,5 +95,21 @@ function calcularDepuracionCreatinina() {
     location.reload();
 }
 
+// Función para revisar el historial de pacientes
+function revisarHistorial() {
+    const nombrePaciente = prompt('Ingrese el nombre del paciente:').toLowerCase();
+    const pacientesEncontrados = historialPacientes.filter(paciente => paciente.nombre.toLowerCase() === nombrePaciente);
+
+    if (pacientesEncontrados.length > 0) {
+        pacientesEncontrados.forEach(paciente => {
+            alert(`Nombre: ${paciente.nombre}\nEdad: ${paciente.edad}\nSexo: ${paciente.sexo}\nPeso: ${paciente.peso}\nCreatinina: ${paciente.creatinina}\nRaza Negra: ${paciente.esNegro}`);
+        });
+    } else {
+        alert('No se encontró el paciente.');
+    }
+
+    location.reload();
+}
+
 // Ejecutar la función automáticamente al cargar la página
-window.onload = calcularDepuracionCreatinina;
+window.onload = login;
